@@ -1,0 +1,17 @@
+@import 'src/common/styles/colors';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.tab {
+    color: $white;
+    text-decoration: none;
+    transition: 0.2s color;
+
+    &:hover {
+        color: $gray300;
+    }
+}

@@ -1,0 +1,81 @@
+.title {
+    &__large {
+        font-size: 120px;
+        line-height: 150px;
+        letter-spacing: -2%;
+    }
+
+    &__small {
+        font-size: 96px;
+        line-height: 120px;
+        letter-spacing: -2%;
+    }
+}
+
+.heading {
+    &__huge {
+        font-size: 72px;
+        line-height: 90px;
+        letter-spacing: -2%;
+    }
+
+    &__extraLarge {
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: -2%;
+    }
+
+    &__large {
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: -2%;
+    }
+
+    &__medium {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -2%;
+    }
+
+    &__small {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    &__extraSmall {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.body {
+    &__extraLarge {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__large {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__medium {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__small {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__extraSmall {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    &__tiny {
+        font-size: 10px;
+        line-height: 16px;
+    }
+}

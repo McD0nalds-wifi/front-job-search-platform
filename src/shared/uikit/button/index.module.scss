@@ -1,0 +1,112 @@
+@import 'src/common/styles/colors';
+@import 'src/common/styles/shadows';
+
+.button {
+    height: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    transition:
+        color 0.2s,
+        background-color 0.2s,
+        box-shadow 0.2s;
+    cursor: pointer;
+
+    &__small {
+        padding: 10px 18px;
+        border-radius: 8px;
+    }
+
+    &__medium {
+        padding: 12px 20px;
+        border-radius: 8px;
+    }
+
+    &__large {
+        padding: 14px 22px;
+        border-radius: 8px;
+    }
+
+    &__primary {
+        background-color: $black;
+        color: $white;
+        box-shadow: $normalMedium;
+
+        &:hover {
+            background-color: $gray1000;
+            box-shadow: $hoverSecondary;
+        }
+
+        &:active {
+            background-color: $black;
+            box-shadow: $normalMedium;
+        }
+
+        &:disabled {
+            background-color: $gray100;
+            color: $gray300;
+            box-shadow: $normalMedium;
+            cursor: not-allowed;
+        }
+    }
+
+    &__secondary {
+        background-color: $gray50;
+        color: $black;
+        box-shadow: $normalMedium;
+
+        &:hover {
+            background-color: $gray200;
+            box-shadow: $hoverPrimary;
+        }
+
+        &:active {
+            background-color: $gray50;
+            box-shadow: $normalMedium;
+        }
+
+        &:disabled {
+            background-color: $gray50;
+            color: $gray300;
+            box-shadow: $normalMedium;
+            cursor: not-allowed;
+        }
+    }
+
+    &__light {
+        background-color: $white;
+        color: $black;
+        box-shadow: $normalMedium;
+
+        &:hover {
+            background-color: $gray100;
+            box-shadow: $hoverPrimary;
+        }
+
+        &:active {
+            background-color: $white;
+            box-shadow: $normalMedium;
+        }
+
+        &:disabled {
+            background-color: $white;
+            color: $gray300;
+            box-shadow: $normalMedium;
+            cursor: not-allowed;
+        }
+    }
+
+    &__text {
+        color: $black;
+        background-color: transparent;
+        padding: 0 !important;
+
+        &:disabled {
+            color: $gray300;
+            cursor: not-allowed;
+        }
+    }
+}

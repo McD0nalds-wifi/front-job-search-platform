@@ -1,0 +1,8 @@
+@import 'src/common/styles/colors';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    background-color: $gray1000;
+    padding: 30px 60px;
+}
