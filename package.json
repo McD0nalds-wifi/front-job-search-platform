@@ -31,7 +31,6 @@
     "@storybook/nextjs": "^7.0.26",
     "@storybook/react": "^7.0.26",
     "@storybook/testing-library": "^0.0.14-next.2",
-    "copy-webpack-plugin": "^11.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-formatjs": "^4.10.3",
     "eslint-plugin-react": "^7.32.2",
