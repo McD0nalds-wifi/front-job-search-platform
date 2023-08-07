@@ -1,0 +1,12 @@
+@import 'src/common/styles/colors';
+
+.avatar {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s opacity;
+    background-color: $gray200;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

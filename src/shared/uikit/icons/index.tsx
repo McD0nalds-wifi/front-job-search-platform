@@ -2,7 +2,10 @@ import { ReactNode } from 'react'
 
 import { ColorsType } from '@/shared/constants'
 
+export { BellIcon } from './BellIcon'
 export { MapPointIcon } from './MapPointIcon'
+export { SettingsIcon } from './SettingsIcon'
+export { UserIcon } from './UserIcon'
 
 export type IconCursorType = 'default' | 'pointer' | 'inherit'
 

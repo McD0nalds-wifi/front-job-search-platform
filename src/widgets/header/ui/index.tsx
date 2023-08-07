@@ -1,3 +1,4 @@
+import { ActionButtons } from '@/widgets/header/ui/ActionButtons'
 import { Location } from '@/widgets/header/ui/Location'
 import { Tabs } from '@/widgets/header/ui/Tabs'
 
@@ -10,9 +11,11 @@ export const Header = () => {
 
             <Tabs />
 
-            <div style={{ marginLeft: '100px' }}>
+            <div className={style.locationWrapper}>
                 <Location />
             </div>
+
+            <ActionButtons />
         </div>
     )
 }
