@@ -1,7 +1,8 @@
 import { CSSProperties, ReactNode } from 'react'
 
+import { COLORS, ColorsType } from '@/shared/constants'
+
 import style from './index.module.scss'
-import { COLORS, ColorsType } from '../../constants'
 
 type TypographyComponentType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'div' | 'span' | 'a'
 type TypographyAlignType = 'left' | 'center' | 'right'

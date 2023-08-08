@@ -1,3 +1,5 @@
+import { routes } from '@/common/routes'
+
 export const TABS = {
     community: {
         href: '#',
@@ -6,7 +8,7 @@ export const TABS = {
         title: 'Сообщество',
     },
     findJob: {
-        href: '#',
+        href: routes.findJob.getRoute(),
         id: 'findJob',
         isForAuthorizedOnly: false,
         title: 'Поиск работы',
