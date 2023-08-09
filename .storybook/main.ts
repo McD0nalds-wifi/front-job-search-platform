@@ -8,7 +8,7 @@ const config: StorybookConfig = {
         name: '@storybook/nextjs',
         options: {},
     },
-    webpackFinal: async (config, { configType }) => {
+    webpackFinal: async (config) => {
         config.resolve.modules = [path.resolve(__dirname, '..'), 'node_modules']
         config.resolve.alias = {
             ...config.resolve.alias,
