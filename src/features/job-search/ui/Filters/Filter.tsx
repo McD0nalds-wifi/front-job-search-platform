@@ -24,12 +24,13 @@ export const Filter = ({ iconSlot, shouldShowAnimation, title }: IFilterProps) =
 
             <motion.div
                 animate={{
+                    marginLeft: shouldShowAnimation ? 16 : 0,
                     maxWidth: shouldShowAnimation ? filterRef.current?.scrollWidth : 0,
                     opacity: shouldShowAnimation ? 1 : 0,
                     x: shouldShowAnimation ? 0 : 100,
                 }}
                 className={style.filter_title}
-                initial={{ maxWidth: 0, opacity: 0, x: 100 }}
+                initial={{ marginLeft: 0, maxWidth: 0, opacity: 0, x: 100 }}
             >
                 <Typography color={'gray600'} isNowrap={true} size={'medium'} type={'body'}>
                     {title}

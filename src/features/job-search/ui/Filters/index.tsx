@@ -2,13 +2,15 @@ import { filtersList } from '@/features/job-search/ui/Filters/config'
 import { Filter } from '@/features/job-search/ui/Filters/Filter'
 import { IconButton } from '@/shared/uikit'
 
+import style from './index.module.scss'
+
 interface IFiltersProps {
     isFiltersOpen: boolean
 }
 
 export const Filters = ({ isFiltersOpen }: IFiltersProps) => {
     return (
-        <div style={{ alignItems: 'center', display: 'flex', gap: '12px' }}>
+        <div className={style.filters}>
             {filtersList.map(({ id, title, Icon }) => (
                 <Filter
                     iconSlot={<IconButton Icon={Icon} />}

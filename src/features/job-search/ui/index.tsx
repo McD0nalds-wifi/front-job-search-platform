@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 
 import { routes } from '@/common/routes'
 import { Filters } from '@/features/job-search/ui/Filters'
@@ -13,8 +13,9 @@ import { InputSearch } from './InputSearch'
 
 export const JobSearch = () => {
     const { push } = useRouter()
+    const searchParams = useSearchParams()
 
-    const [searchValue, setSearchValue] = useState('')
+    const [searchValue, setSearchValue] = useState(searchParams.get('search') || '')
     const debouncedSearchValue = useDebounce(searchValue, 500)
 
     useEffect(() => {
