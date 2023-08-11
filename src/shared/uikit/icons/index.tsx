@@ -2,7 +2,10 @@ import { ReactNode } from 'react'
 
 import { ColorsType } from '@/shared/constants'
 
+export { AltArrowDownIcon } from './AltArrowDownIcon'
+export { BanknoteIcon } from './BanknoteIcon'
 export { BellIcon } from './BellIcon'
+export { CaseIcon } from './CaseIcon'
 export { MapPointIcon } from './MapPointIcon'
 export { SearchIcon } from './SearchIcon'
 export { SettingsIcon } from './SettingsIcon'

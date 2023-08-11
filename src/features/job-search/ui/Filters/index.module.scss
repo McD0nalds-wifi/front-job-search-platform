@@ -1,0 +1,13 @@
+.filter {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+
+    // filter_title
+    &_title {
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}

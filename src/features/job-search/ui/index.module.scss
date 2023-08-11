@@ -3,6 +3,7 @@
 .wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: $gray1000;
     padding: 30px 60px;
 }
